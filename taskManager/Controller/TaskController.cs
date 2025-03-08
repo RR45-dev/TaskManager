@@ -14,7 +14,7 @@ public class TaskController : ControllerBase
     public async Task<ActionResult<IEnumerable<TaskItems>>> GetTasks() =>
         await _context.TaskTable.ToListAsync();
 
-    //todyas tasks //
+    //todyas tasks //get all tasks for today
     [HttpGet("today")]
     public async Task<IActionResult> GetTasksForToday()
     {
