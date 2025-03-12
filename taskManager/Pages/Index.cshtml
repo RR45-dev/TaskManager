@@ -170,11 +170,11 @@
 function enableEdit(button) {
     let row = button.closest("tr");
 
-    // Show input fields, hide text spans
+    
     row.querySelectorAll(".text").forEach(span => span.hidden = true);
     row.querySelectorAll(".edit-input").forEach(input => input.hidden = false);
 
-    // Show "Save" button, hide "Edit" button
+    
     row.querySelector(".edit-btn").hidden = true;
     row.querySelector(".save-btn").hidden = false;
 }
